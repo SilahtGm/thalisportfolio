@@ -169,7 +169,6 @@ img {
 
 /* Header */
 header {
-  padding: 20px 40px; /* ADICIONE padding horizontal */
   background-color: #222;
   border-bottom: 6px solid #2daad4;
   color: #fff;
@@ -191,13 +190,11 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
   margin-top: 15px;
   gap: 15px; /* Espaço menor entre itens no mobile */
 }
 
 header nav ul li a {
-  padding: 8px 12px; /* Dá respiro nos links */
   border-radius: 6px; /* Opcional, deixa visual mais suave */
   color: #fff;
   text-transform: uppercase;
@@ -211,11 +208,11 @@ header nav ul li a {
 @media (max-width: 768px) {
   header {
     padding: 20px 20px; /* menor no mobile */
+    gap: 15;
   }
 
   header nav ul li a:hover {
     text-decoration: underline;
-     text-transform: uppercase;
     color: #00bfff;
   }
 }

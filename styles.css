@@ -370,7 +370,7 @@ border-left: 7px solid #00bfff;
 
 #contador-slide {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 191, 255, 0.85); /* azul translúcido vibrante */
@@ -390,8 +390,8 @@ border-left: 7px solid #00bfff;
 }
 
 #contador-slide:hover {
-  background: rgba(0, 191, 255, 1);
-  box-shadow: 0 6px 20px rgba(0, 191, 255, 0.8);
+  opacity: 0.1; /* valor entre 0 (transparente) e 1 (opaco) */
+  box-shadow: 0 6px 20px rgba(0, 191, 255, 0.1);
 }
 
 

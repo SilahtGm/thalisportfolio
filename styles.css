@@ -718,4 +718,12 @@ footer p {
 }
 
 
+#sobre .sobre-container {
+  position: relative;
+  margin-top: -50px; /* Sobe a foto pra encostar no Bem-vindo */
+}
+
+#sobre .sobre-foto {
+  align-self: flex-start; /* Garante que fique no topo */
+}
 

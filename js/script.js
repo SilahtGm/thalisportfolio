@@ -77,7 +77,7 @@ Abaixo, apresento algumas telas que desenvolvemos.`,
     ]
   }
   {
-  titulo: "💡 Meu Novo Projeto Incrível",
+  titulo: "eu Novo Projeto Incrível",
   descricao: `Descreva aqui o que é o projeto, os objetivos, ferramentas usadas, entregas, etc.<br>
 ✅ Lista de entregas<br>
 ✅ Link do protótipo se quiser<br>

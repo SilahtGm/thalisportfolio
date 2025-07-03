@@ -106,7 +106,7 @@ img {
 .sobre-foto .icone-download {
   position: absolute;
   bottom: -20px;  /* dentro da foto, 20px acima da base */
-  left: 45%;
+  left: 35%;
   transform: translateX(-50%);
   z-index: 11; /* fica na frente da imagem */
 }

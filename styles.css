@@ -367,6 +367,13 @@ border-left: 7px solid #00bfff;
   right: 10px;
 }
 
+#contador-slide {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #222;
+  font-size: 1rem;
+}
 
 
 footer {

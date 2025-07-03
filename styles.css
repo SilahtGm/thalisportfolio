@@ -368,12 +368,30 @@ border-left: 7px solid #00bfff;
 }
 
 #contador-slide {
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #222;
-  font-size: 1rem;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 191, 255, 0.85); /* azul translúcido vibrante */
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 191, 255, 0.6);
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
 }
+
+#contador-slide:hover {
+  background: rgba(0, 191, 255, 1);
+  box-shadow: 0 6px 20px rgba(0, 191, 255, 0.8);
+}
+
 
 
 footer {

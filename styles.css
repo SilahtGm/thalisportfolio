@@ -89,6 +89,14 @@ img {
   font-family: 'Montserrat', sans-serif;
 }
 
+#bem-vindo h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 40px;
+}
+
 
 .icone-download {
   position: absolute;

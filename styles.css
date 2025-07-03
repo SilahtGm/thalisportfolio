@@ -215,6 +215,7 @@ header nav ul li a {
 
   header nav ul li a:hover {
     text-decoration: underline;
+     text-transform: uppercase;
     color: #00bfff;
   }
 }

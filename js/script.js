@@ -56,8 +56,7 @@ const projetos = [
     descricao: `Olá a todos, este meu projeto foi desenvolvido durante minhas aulas na ETEC no módulo de Desenvolvimento de Sistemas.
  Utilizei a linguagem Java e a estrutura switch case para criar uma lógica que informa ao usuário a data correta para pagamento do IPVA de acordo com o final da placa do veículo.<br>`
     imagens: [
-      "./img/NovoProjeto1.png",
-      "./img/NovoProjeto2.png"
+      "./img/javaagd7.png"
     ]
   }
 ];

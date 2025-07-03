@@ -200,6 +200,7 @@ header nav ul li a {
   padding: 8px 12px; /* Dá respiro nos links */
   border-radius: 6px; /* Opcional, deixa visual mais suave */
   color: #fff;
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;

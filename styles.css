@@ -373,7 +373,7 @@ border-left: 7px solid #00bfff;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 191, 255, 0.85); /* azul translúcido vibrante */
+  background: rgba(0, 191, 255, 0.85); /* fundo com 85% opacidade */
   color: #fff;
   padding: 8px 18px;
   border-radius: 25px;
@@ -382,17 +382,17 @@ border-left: 7px solid #00bfff;
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 4px 15px rgba(0, 191, 255, 0.6);
   user-select: none;
-  pointer-events: none;
   letter-spacing: 1px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  transition: background-color 0.3s ease;
-  z-index: 10; /* Para garantir que fique sobre as imagens */
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10; /* garante sobreposição */
 }
 
 #contador-slide:hover {
-  opacity: 0.1; /* valor entre 0 (transparente) e 1 (opaco) */
-  box-shadow: 0 6px 20px rgba(0, 191, 255, 0.1);
+  opacity: 0.1; /* quase transparente */
+  box-shadow: 0 6px 20px rgba(0, 191, 255, 0.05); /* sombra quase zero */
 }
+
 
 
 

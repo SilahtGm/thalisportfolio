@@ -687,10 +687,12 @@ footer p {
 
 
 
-  @media (max-width: 768px) {
-  .btn-enviar button {
+ @media (max-width: 768px) {
+  .btn-enviar {
     width: 100%;
     font-size: 1.1rem;
   }
+}
+
 
 

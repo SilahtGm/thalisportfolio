@@ -354,8 +354,8 @@ border-left: 7px solid #00bfff;
 }
 
 .sobre-foto img {
-  margin-left: 30px;
-  justify-content: flex-end;
+  margin-left: -10px; /* volta pra posição que você gostava */
+  justify-content: flex-end; /* pode manter */
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -365,6 +365,15 @@ border-left: 7px solid #00bfff;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
+
+.sobre-foto .icone-download {
+  left: 65%;  /* volta pra posição que você queria */
+  bottom: 20px;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 11;
+}
+
 
 
 

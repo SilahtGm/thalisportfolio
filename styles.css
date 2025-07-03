@@ -673,11 +673,16 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .navegacao-projetos {
+    gap: 10px; /* adicione um gap no container flex! */
+    flex-wrap: wrap; /* garante quebra se precisar */
+  }
   .navegacao-projetos button {
-    width: 60%;
-    gap: 10px ;
+    width: 45%; /* 2 botões = 90% + 10% gap dá certinho */
     font-size: 1.1rem;
   }
+}
+
 
   @media (max-width: 768px) {
   .btn-enviar button {

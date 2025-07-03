@@ -83,11 +83,13 @@ img {
 
 .pergunta {
   color: #00bfff;
-  margin-bottom: 5px;
+  margin-bottom: 15px; /* ou 20px */
   font-size: 1.3rem;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
+  display: block; /* garante que fique em bloco, se usar span */
 }
+
 
 #bem-vindo h2 {
   text-align: center;

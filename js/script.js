@@ -1,46 +1,9 @@
 const slide = document.querySelector('.carousel-slide');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
-
-let counter = 0;
-let isMoving = false;
-
-// Sempre atualiza o número de imagens quando precisar
-function getImages() {
-  return document.querySelectorAll('.carousel-slide img');
-}
-
-function updateSlide() {
-  slide.style.transform = `translateX(${-counter * 100}%)`;
-}
-
-nextBtn.addEventListener('click', () => {
-  if (isMoving) return;
-  isMoving = true;
-  counter++;
-  const images = getImages();
-  if (counter >= images.length) {
-    counter = 0; // loop infinito
-  }
-  updateSlide();
-  setTimeout(() => isMoving = false, 400);
-});
-
-prevBtn.addEventListener('click', () => {
-  if (isMoving) return;
-  isMoving = true;
-  counter--;
-  const images = getImages();
-  if (counter < 0) {
-    counter = images.length - 1; // loop infinito
-  }
-  updateSlide();
-  setTimeout(() => isMoving = false, 400);
-});
-
-// --------------------------
-// PROJETOS
-// --------------------------
+const tituloEl = document.querySelector('.descricao-projeto h3');
+const descricaoEl = document.querySelector('.descricao-projeto p');
+const backToTop = document.getElementById('backToTop');
 
 const projetos = [
   {
@@ -101,47 +64,92 @@ const projetos = [
   }
 ];
 
-
 let projetoIndex = 0;
+let slideIndex = 0; // índice da imagem dentro do projeto
+let isAnimating = false;
 
-const tituloEl = document.querySelector('.descricao-projeto h3');
-const descricaoEl = document.querySelector('.descricao-projeto p');
-
-function carregarProjeto(index) {
-  const projeto = projetos[index];
-  tituloEl.textContent = projeto.titulo;
-  descricaoEl.innerHTML = projeto.descricao;
-
-  slide.innerHTML = projeto.imagens.map(src => `<img src="${src}" alt="Imagem do projeto">`).join('');
-
-  counter = 0; // reset do slide
-  updateSlide();
+// Função que carrega as imagens no slide para o projeto atual
+function carregarImagensProjeto() {
+  const imagens = projetos[projetoIndex].imagens;
+  slide.innerHTML = imagens
+    .map(
+      (src, i) =>
+        `<img src="${src}" alt="Imagem ${i + 1} do projeto" draggable="false" />`
+    )
+    .join('');
+  slide.style.transform = 'translateX(0)';
+  slideIndex = 0;
 }
 
+// Atualiza título e descrição do projeto
+function carregarDescricaoProjeto() {
+  tituloEl.textContent = projetos[projetoIndex].titulo;
+  descricaoEl.innerHTML = projetos[projetoIndex].descricao;
+}
+
+// Atualiza o slide para a imagem no índice atual
+function updateSlide() {
+  slide.style.transition = 'transform 0.4s ease-in-out';
+  slide.style.transform = `translateX(${-slideIndex * 100}%)`;
+}
+
+// Navega para próxima imagem no slide
+function nextSlide() {
+  if (isAnimating) return;
+  const totalImgs = projetos[projetoIndex].imagens.length;
+  isAnimating = true;
+  slideIndex++;
+  if (slideIndex >= totalImgs) slideIndex = 0;
+  updateSlide();
+  setTimeout(() => {
+    isAnimating = false;
+  }, 400);
+}
+
+// Navega para imagem anterior no slide
+function prevSlide() {
+  if (isAnimating) return;
+  const totalImgs = projetos[projetoIndex].imagens.length;
+  isAnimating = true;
+  slideIndex--;
+  if (slideIndex < 0) slideIndex = totalImgs - 1;
+  updateSlide();
+  setTimeout(() => {
+    isAnimating = false;
+  }, 400);
+}
+
+// Carrega um projeto completo (imagens + descrição)
+function carregarProjeto(index) {
+  if (index < 0) projetoIndex = projetos.length - 1;
+  else if (index >= projetos.length) projetoIndex = 0;
+  else projetoIndex = index;
+
+  carregarDescricaoProjeto();
+  carregarImagensProjeto();
+}
+
+// Eventos dos botões do slide (imagens)
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+// Eventos dos botões de navegação dos projetos
 document.getElementById('next-project').addEventListener('click', () => {
-  projetoIndex++;
-  if (projetoIndex >= projetos.length) projetoIndex = 0;
-  carregarProjeto(projetoIndex);
+  carregarProjeto(projetoIndex + 1);
 });
-
 document.getElementById('prev-project').addEventListener('click', () => {
-  projetoIndex--;
-  if (projetoIndex < 0) projetoIndex = projetos.length - 1;
-  carregarProjeto(projetoIndex);
+  carregarProjeto(projetoIndex - 1);
 });
 
-carregarProjeto(projetoIndex);
-
-const backToTop = document.getElementById('backToTop');
-
+// Botão voltar ao topo
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    backToTop.style.display = 'block';
-  } else {
-    backToTop.style.display = 'none';
-  }
+  if (window.scrollY > 300) backToTop.style.display = 'block';
+  else backToTop.style.display = 'none';
 });
 
 backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Inicializa página com o primeiro projeto carregado
+carregarProjeto(projetoIndex);

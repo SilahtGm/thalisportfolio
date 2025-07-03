@@ -77,14 +77,15 @@ Abaixo, apresento algumas telas que desenvolvemos.`,
     ]
   }
   {
-  titulo: "eu Novo Projeto Incrível",
-  descricao: `Descreva aqui o que é o projeto, os objetivos, ferramentas usadas, entregas, etc.<br>
-✅ Lista de entregas<br>
-✅ Link do protótipo se quiser<br>
-✅ Qualquer detalhe que valorize o projeto!`,
+  titulo: "📋 Cálculo de Comissão com Bônus - Java ",
+  descricao: `Olá a todos, neste projeto que eu desenvolvi para o curso técnico da Etec, utilizando Java.<br>
+ O programa realiza o cálculo da comissão de vendas, adicionando um bônus extra quando a meta de quantidade é ultrapassada.<br>
+ O usuário informa o valor total vendido e a quantidade de vendas realizadas, e o sistema retorna o valor da comissão com ou sem bônus.<br>
+ Esse exercício ajudou a praticar estruturas de controle (if, while), operações matemáticas e interação com o console.<br>
+📌 Tecnologias: Java, NetBeans IDE`,
   imagens: [
-    "./img/NovoProjeto1.png",
-    "./img/NovoProjeto2.png"
+    "./img/ExecuçãoDoJava.png",
+    "./img/Captura de tela 2025-07-02 231543.png"
   ]
 }
 {

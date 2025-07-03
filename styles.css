@@ -205,15 +205,14 @@ header nav ul li a {
     font-size: 1rem; /* Um pouco maior, se quiser */
 }
 
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #00bfff;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 20px 20px; /* menor no mobile */
-    gap: 15;
-  }
-
-  header nav ul li a:hover {
-    text-decoration: underline;
-    color: #00bfff;
   }
 }
 

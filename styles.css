@@ -368,7 +368,7 @@ border-left: 7px solid #00bfff;
   right: 10px;
 }
 
-.contador-slide {
+#contador-slide {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -386,9 +386,10 @@ border-left: 7px solid #00bfff;
   letter-spacing: 1px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.3);
   transition: background-color 0.3s ease;
+  z-index: 10; /* Para garantir que fique sobre as imagens */
 }
 
-.contador-slide:hover {
+#contador-slide:hover {
   background: rgba(0, 191, 255, 1);
   box-shadow: 0 6px 20px rgba(0, 191, 255, 0.8);
 }

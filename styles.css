@@ -674,13 +674,13 @@ footer p {
 
 @media (max-width: 768px) {
   .navegacao-projetos button {
-    width: 70%;
+    width: 60%;
     gap: 10px ;
     font-size: 1.1rem;
   }
 
   @media (max-width: 768px) {
-  .btn-enviar {
+  .btn-enviar button {
     width: 100%;
     font-size: 1.1rem;
   }

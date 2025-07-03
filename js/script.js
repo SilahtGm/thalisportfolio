@@ -62,45 +62,45 @@ const projetos = [
   {
     titulo: "🌍 Global Solutions – Projeto Pluvius",
     descricao: `No mês de junho, tive a oportunidade de participar de mais um desafio da FIAP, o Global Solutions. 
- Um desafio em grupo que tinha como objetivo criar soluções tecnológicas para lidar com eventos climáticos extremos.
-A nossa proposta foi o "Pluvius", uma plataforma web voltada ao monitoramento climático, com foco em previsões atualizadas, alertas de risco, mapas interativos e dashboards informativos. A solução foi pensada para ajudar tanto a população quanto órgãos públicos a se prepararem melhor diante de situações como enchentes e tempestades.<br>
-Nosso projeto contou com:<br>
- ✅ Análise do problema<br>
- ✅ Protótipo visual criado no Figma<br>
- ✅ Dashboard com dados climáticos e alertas<br>
- ✅ Modelagem lógica e física dos dados<br>
-Abaixo, apresento algumas telas que desenvolvemos.`,
+    Um desafio em grupo que tinha como objetivo criar soluções tecnológicas para lidar com eventos climáticos extremos.
+    A nossa proposta foi o "Pluvius", uma plataforma web voltada ao monitoramento climático, com foco em previsões atualizadas, alertas de risco, mapas interativos e dashboards informativos. A solução foi pensada para ajudar tanto a população quanto órgãos públicos a se prepararem melhor diante de situações como enchentes e tempestades.<br>
+    Nosso projeto contou com:<br>
+    ✅ Análise do problema<br>
+    ✅ Protótipo visual criado no Figma<br>
+    ✅ Dashboard com dados climáticos e alertas<br>
+    ✅ Modelagem lógica e física dos dados<br>
+    Abaixo, apresento algumas telas que desenvolvemos.`,
     imagens: [
       "./img/LoginP.png",
       "./img/InicioP.png",
       "./img/MapaP.png"
     ]
-  }
+  },
   {
-  titulo: "📋 Cálculo de Comissão com Bônus - Java ",
-  descricao: `Olá a todos, neste projeto que eu desenvolvi para o curso técnico da Etec, utilizando Java.<br>
- O programa realiza o cálculo da comissão de vendas, adicionando um bônus extra quando a meta de quantidade é ultrapassada.<br>
- O usuário informa o valor total vendido e a quantidade de vendas realizadas, e o sistema retorna o valor da comissão com ou sem bônus.<br>
- Esse exercício ajudou a praticar estruturas de controle (if, while), operações matemáticas e interação com o console.<br>
-📌 Tecnologias: Java, NetBeans IDE`,
-  imagens: [
-    "./img/ExecuçãoDoJava.png",
-    "./img/Captura de tela 2025-07-02 231543.png"
-  ]
-}
-{
-  titulo: "💡 Meu Novo Projeto Incrível",
-  descricao: `Descreva aqui o que é o projeto, os objetivos, ferramentas usadas, entregas, etc.<br>
-✅ Lista de entregas<br>
-✅ Link do protótipo se quiser<br>
-✅ Qualquer detalhe que valorize o projeto!`,
-  imagens: [
-    "./img/NovoProjeto1.png",
-    "./img/NovoProjeto2.png"
-  ]
-}
-
+    titulo: "📋 Cálculo de Comissão com Bônus - Java ",
+    descricao: `Olá a todos, neste projeto que eu desenvolvi para o curso técnico da Etec, utilizando Java.<br>
+    O programa realiza o cálculo da comissão de vendas, adicionando um bônus extra quando a meta de quantidade é ultrapassada.<br>
+    O usuário informa o valor total vendido e a quantidade de vendas realizadas, e o sistema retorna o valor da comissão com ou sem bônus.<br>
+    Esse exercício ajudou a praticar estruturas de controle (if, while), operações matemáticas e interação com o console.<br>
+    📌 Tecnologias: Java, NetBeans IDE`,
+    imagens: [
+      "./img/ExecuçãoDoJava.png",
+      "./img/Captura de tela 2025-07-02 231543.png"
+    ]
+  },
+  {
+    titulo: "💡 Meu Novo Projeto Incrível",
+    descricao: `Descreva aqui o que é o projeto, os objetivos, ferramentas usadas, entregas, etc.<br>
+    ✅ Lista de entregas<br>
+    ✅ Link do protótipo se quiser<br>
+    ✅ Qualquer detalhe que valorize o projeto!`,
+    imagens: [
+      "./img/NovoProjeto1.png",
+      "./img/NovoProjeto2.png"
+    ]
+  }
 ];
+
 
 let projetoIndex = 0;
 

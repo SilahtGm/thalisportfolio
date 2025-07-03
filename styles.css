@@ -102,12 +102,17 @@ img {
 }
 
 
-.icone-download {
+/* Ícone download dentro da foto */
+.sobre-foto .icone-download {
   position: absolute;
-  bottom: -20px; /* Negativo faz o botão ficar meio pra fora da imagem */
-  left: 55%;
+  bottom: 20px;  /* dentro da foto, 20px acima da base */
+  left: 50%;
   transform: translateX(-50%);
-  background: #fff; /* Cor de fundo do círculo */
+  z-index: 11; /* fica na frente da imagem */
+}
+
+.sobre-foto .icone-download a {
+  background: #fff;
   border: 2px solid #222;
   border-radius: 50%;
   padding: 10px;
@@ -117,10 +122,11 @@ img {
   transition: 0.3s;
 }
 
-.icone-download:hover {
+.sobre-foto .icone-download a:hover {
   background: #222;
   color: #fff;
 }
+
 
 .formacao-logo {
   position: absolute;

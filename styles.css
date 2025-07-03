@@ -169,6 +169,7 @@ img {
 
 /* Header */
 header {
+  padding: 20px 40px; /* ADICIONE padding horizontal */
   background-color: #222;
   border-bottom: 6px solid #2daad4;
   color: #fff;
@@ -186,19 +187,30 @@ header h1 {
 }
 
 header nav ul {
+   flex-wrap: wrap; /* Para não estourar no mobile */
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 15px;
+  gap: 15px; /* Espaço menor entre itens no mobile */
 }
 
 header nav ul li a {
+  padding: 8px 12px; /* Dá respiro nos links */
+  border-radius: 6px; /* Opcional, deixa visual mais suave */
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  padding: 10px 15px; /* Links maiores no mobile */
+    font-size: 1rem; /* Um pouco maior, se quiser */
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 20px; /* Um pouco menor no mobile */
+  }
 
 header nav ul li a:hover {
   text-decoration: underline;

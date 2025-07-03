@@ -4,6 +4,8 @@ const nextBtn = document.querySelector('.next');
 const tituloEl = document.querySelector('.descricao-projeto h3');
 const descricaoEl = document.querySelector('.descricao-projeto p');
 const backToTop = document.getElementById('backToTop');
+const contadorSlide = document.getElementById('contador-slide');
+
 
 const projetos = [
   {
@@ -76,7 +78,9 @@ function carregarImagensProjeto() {
     .join('');
   slide.style.transform = 'translateX(0)';
   slideIndex = 0;
+  updateContador(); // Novo!
 }
+
 
 // Atualiza título e descrição do projeto
 function carregarDescricaoProjeto() {
@@ -84,11 +88,19 @@ function carregarDescricaoProjeto() {
   descricaoEl.innerHTML = projetos[projetoIndex].descricao;
 }
 
+function updateContador() {
+  const totalImgs = projetos[projetoIndex].imagens.length;
+  contadorSlide.textContent = `(${slideIndex + 1}/${totalImgs})`;
+}
+
+
 // Atualiza o slide para a imagem no índice atual
 function updateSlide() {
   slide.style.transition = 'transform 0.4s ease-in-out';
   slide.style.transform = `translateX(${-slideIndex * 100}%)`;
+  updateContador();
 }
+
 
 // Navega para próxima imagem no slide
 function nextSlide() {

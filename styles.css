@@ -277,15 +277,24 @@ border-left: 7px solid #00bfff;
   gap: 40px;
 }
 
+/* Container do BEM-VINDO com flex para alinhar lado a lado */
+#bem-vindo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Responsivo */
+}
+
+/* Foto no lado direito */
 .sobre-foto {
   position: relative;
   display: inline-block;
+  margin-left: 20px; /* controle horizontal */
+  margin-top: 0;     /* controle vertical */
 }
 
 /* Foto normal */
 .sobre-foto .foto {
-  margin-top: 10px;
-  margin-left: 50%;
   display: block;
   width: 100%;
   max-width: 300px;
@@ -299,7 +308,7 @@ border-left: 7px solid #00bfff;
 .sobre-foto .overlay-text {
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 700;
@@ -328,6 +337,7 @@ border-left: 7px solid #00bfff;
 .sobre-foto:hover .overlay-text {
   opacity: 1;
 }
+
 
 
 

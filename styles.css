@@ -283,6 +283,7 @@ border-left: 7px solid #00bfff;
 
 /* Foto normal */
 .sobre-foto .foto {
+  margin-top: 10px;
   display: block;
   width: 100%;
   max-width: 300px;

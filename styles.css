@@ -367,8 +367,8 @@ border-left: 7px solid #00bfff;
 }
 
 .sobre-foto .icone-download {
-  left: 65%;  /* volta pra posição que você queria */
-  bottom: 20px;
+  left: 55%;  /* volta pra posição que você queria */
+  bottom: -10px;
   position: absolute;
   transform: translateX(-50%);
   z-index: 11;

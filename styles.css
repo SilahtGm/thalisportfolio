@@ -81,6 +81,15 @@ img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.pergunta {
+  color: #00bfff;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 .icone-download {
   position: absolute;
   bottom: -20px; /* Negativo faz o botão ficar meio pra fora da imagem */

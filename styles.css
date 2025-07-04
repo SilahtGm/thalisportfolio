@@ -68,12 +68,8 @@ body {
   line-height: 1.6;
   font-weight: 600;
   color: #333;
-   user-select: none;
-  background-image: url('./img/fundodapagina.jpg');
-  background-repeat: repeat;          /* repete como "tile" */
-  background-size: auto;              /* mantém o tamanho original */
-  background-position: top left;      /* começa no canto superior esquerdo */
-  background-color: #0d0d0d;          /* fallback */
+  user-select: none;
+  background-color: #e7e6e6;
 }
 
 /* Imagens genéricas */

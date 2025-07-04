@@ -106,7 +106,7 @@ img {
 .sobre-foto .icone-download {
   position: absolute;
   bottom: -20px;  /* dentro da foto, 20px acima da base */
-  left: 45%;
+  left: 47%;
   transform: translateX(-50%);
   z-index: 11; /* fica na frente da imagem */
 }
@@ -314,7 +314,7 @@ border-left: 7px solid #00bfff;
 .sobre-foto .overlay-text {
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 47%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 700;

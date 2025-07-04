@@ -448,6 +448,7 @@ border-left: 7px solid #00bfff;
 footer {
   background: linear-gradient(135deg, #000000, #222);
   color: #fff;
+   font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;

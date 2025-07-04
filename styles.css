@@ -123,11 +123,8 @@ img {
 }
 
 .sobre-foto .icone-download a:hover {
-  color:#8B0000;
-}
-.sobre-foto .icone-download a:hover {
   background: #222;
-  color: #fff;
+  color: #color:#8B0000;
 }
 
 

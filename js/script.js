@@ -26,15 +26,18 @@ const projetos = [
   },
   {
     titulo: "🌍 Global Solutions – Projeto Pluvius",
-    descricao: `No mês de junho, tive a oportunidade de participar de mais um desafio da FIAP, o Global Solutions. 
-    Um desafio em grupo que tinha como objetivo criar soluções tecnológicas para lidar com eventos climáticos extremos.
-    A nossa proposta foi o "Pluvius", uma plataforma web voltada ao monitoramento climático, com foco em previsões atualizadas, alertas de risco, mapas interativos e dashboards informativos. A solução foi pensada para ajudar tanto a população quanto órgãos públicos a se prepararem melhor diante de situações como enchentes e tempestades.<br>
-    Nosso projeto contou com:<br>
-    ✅ Análise do problema<br>
-    ✅ Protótipo visual criado no Figma<br>
-    ✅ Dashboard com dados climáticos e alertas<br>
-    ✅ Modelagem lógica e física dos dados<br>
-    Abaixo, apresento algumas telas que desenvolvemos.`,
+    descricao: `No mês de junho, tive a oportunidade de participar de mais um desafio da FIAP, o Global Solutions.<br>
+Um projeto em grupo com o objetivo de desenvolver soluções tecnológicas para lidar com eventos climáticos extremos.<br>
+Nossa proposta foi o “Pluvius”, uma plataforma web de monitoramento climático, com previsões atualizadas, alertas de risco, mapas interativos e dashboards informativos. Essa solução foi pensada para apoiar tanto a população quanto órgãos públicos na prevenção e resposta a situações como enchentes e tempestades.<br>
+Durante o desenvolvimento, atuei principalmente na parte de front-end e prototipação, além de colaborar na modelagem do banco de dados e na integração com as APIs climáticas.<br>
+A tecnologia utilizada foi o Figma para o design das interfaces.<br>
+Nosso projeto contou com:<br>
+✅ Análise detalhada do problema<br>
+✅ Protótipo visual desenvolvido no Figma<br>
+✅ Dashboard com dados climáticos em tempo real e alertas<br>
+✅ Modelagem lógica e física do banco de dados<br>
+Para saber mais, o repositório completo está disponível em: GitHub - Pluvius<br>
+Abaixo, apresento algumas telas que desenvolvemos.`,
     imagens: [
       "./img/LoginP.png",
       "./img/InicioP.png",
@@ -56,7 +59,8 @@ const projetos = [
   {
     titulo: "🚀 Sistema Java de pagamento de IPVA.",
     descricao: `Olá a todos, este meu projeto foi desenvolvido durante minhas aulas na ETEC no módulo de Desenvolvimento de Sistemas.
- Utilizei a linguagem Java e a estrutura switch case para criar uma lógica que informa ao usuário a data correta para pagamento do IPVA de acordo com o final da placa do veículo.<br>`,
+ Utilizei a linguagem Java e a estrutura switch case para criar uma lógica que informa ao usuário a data correta para pagamento do IPVA de acordo com o final da placa do veículo.<br>
+ 📌 Tecnologias: Java, NetBeans IDE`,
     imagens: [
       "./img/ExecuçãoDoJavaAgenda7.png"
     ]

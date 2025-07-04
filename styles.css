@@ -126,6 +126,9 @@ img {
   color: #fff;
 }
 
+.fas.fa-download:hover {
+  color: #8B0000;
+}
 
 .formacao-logo {
   position: absolute;

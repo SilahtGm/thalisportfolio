@@ -96,6 +96,7 @@ img {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+  border-left: 60px solid #222;
   color: #00bfff;
   margin-bottom: 40px;
   margin-top: 20px;

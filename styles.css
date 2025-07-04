@@ -105,6 +105,7 @@ img {
 .bem-vindo-container {
   position: relative;
   display: inline-block;
+  text-align: center; /* garante centralização */
 }
 
 .mensagem-slide {
@@ -112,6 +113,7 @@ img {
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .bem-vindo-container:hover .mensagem-slide {
@@ -119,6 +121,13 @@ img {
   transform: translateY(0);
 }
 
+/* Mobile: sempre visível */
+@media (max-width: 768px) {
+  .mensagem-slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 /* Ícone download dentro da foto */

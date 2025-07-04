@@ -123,7 +123,8 @@ img {
 }
 
 .sobre-foto .icone-download a:hover {
-  color: #fff;
+  background: #fff;
+  color: #222;
 }
 
 .fas.fa-download:hover {

@@ -71,6 +71,46 @@ margin: 0;
   }
 }
 
+/* Sobre mim */
+
+.mini-menu {
+  width: 700px;
+  display: flex;
+  color: #fff;
+  background-color: #111;
+  border-radius: 30px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+summary {
+ position: absolute;
+}
+
+.Sobre {
+  margin-left: 20%;
+}
+
+.Sobre h1 {
+  margin-left: 40px;
+  color: #fff;
+  margin-top: 5%;
+}
+
+.mini-menu p {
+  margin-top: 50px;
+  
+}
+
+.mini-menu:hover summary {
+  text-decoration: underline;
+}
+
+
 
 /* Navegação */
 nav ul {
@@ -136,11 +176,14 @@ nav ul li a:hover {
   border-color: rgb(5, 109, 194);
   border-radius: 100%;
   padding: 20px;
+  transition: 
+    box-shadow 0.4s ease;
 }
 
 .links a:hover {
   color: #fff;
-  border-color: #fff;
+  border-color: #fff;;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 

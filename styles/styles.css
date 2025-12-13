@@ -7,7 +7,72 @@ overflow-x: hidden;
 margin: 0;
 }
 
+/* Animação Principal */
 
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.5s ease-out, transform 2s ease-out;
+}
+
+.reveal.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Faixa */
+.faixa {
+  width: 100vw;
+  margin-top: 10%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #111;
+  padding: 30px 0;
+  box-shadow: 0 -18px 15px rgba(0, 0, 0, 0.4), 0 18px 15px rgba(0, 0, 0, 0.4);
+}
+
+.conteudo {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 250px;
+  width: max-content;
+  animation: mover 40s linear infinite;
+}
+
+.conteudo:hover {
+  animation-play-state: paused;
+}
+
+.conteudo img {
+  height: 90px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 40px;
+  opacity: 0.4;
+  transition: 
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.conteudo img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 1);
+}
+
+@keyframes mover {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Navegação */
 nav ul {
   display: flex;
   justify-content: end;
@@ -39,6 +104,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Apresentacao principal, topo da tela */
 .apresentacao p {
   color: #fff;
  padding: 50px;
@@ -77,12 +143,6 @@ nav ul li a:hover {
   border-color: #fff;
 }
 
-footer {
-  background-color: rgb(5, 109, 194);
-  width: 100%;
-  margin-top: 200px;
-  height: 300px;
-  box-shadow: 0 -18px 15px rgba(0, 0, 0, 0.4), 0 18px 15px rgba(0, 0, 0, 0.4);
-}
+
 
 /* contato.html*/

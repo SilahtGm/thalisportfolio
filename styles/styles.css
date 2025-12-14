@@ -7,19 +7,6 @@ overflow-x: hidden;
 margin: 0;
 }
 
-@media (max-width: 768px) {
-
-  body {
-    text-align: center;
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 
 /* Animação Principal */
 
@@ -176,9 +163,9 @@ details[open] p {
 @media (max-width: 768px) {
 
   .Sobre {
-    margin-left: 0;
-    padding: 0 12px;
-    width: 100%;
+    padding: 20px;
+    width: 80%;
+     margin: 0 auto; /* 🔥 centraliza */
   }
 
   .Sobre h1 {
@@ -212,7 +199,7 @@ details[open] p {
 nav ul {
   background-color: #111;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-  height: 30px;
+  height: 40px;
   display: flex;
   justify-content: end;
   list-style: none;

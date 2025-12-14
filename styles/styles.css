@@ -236,15 +236,13 @@ nav ul li a {
 @media (max-width: 768px) {
   nav ul {
     display: flex;
+    margin: 0;
+    height: 70px;
     justify-content: center;
      align-items: center;
     overflow-x: hidden;
     gap: 5px;
     flex-wrap: wrap;
-  }
-
-  nav ul li {
-   
   }
 }
 

@@ -177,7 +177,8 @@ nav ul li a:hover {
   border-radius: 100%;
   padding: 20px;
   transition: 
-    box-shadow 0.4s ease;
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
 }
 
 .links a:hover {
@@ -188,4 +189,48 @@ nav ul li a:hover {
 
 
 
-/* contato.html*/
+/* projetos.html*/
+
+.containers {
+  display: inline-grid;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  width: 300px;
+  height: 400px;
+  background-color: #111;
+  border-radius: 30px;
+  border: 2px solid black;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+
+.containers:hover {
+  border: 2px solid #fff;
+}
+
+.containers p {
+  color: #777676;
+}
+
+.containers a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.containers a:hover {
+  text-decoration: underline;
+}
+
+.containers span {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: max-content;
+  height: 10px;
+  align-items: center;
+}

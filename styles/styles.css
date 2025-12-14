@@ -502,7 +502,7 @@ nav ul li a:hover {
 
   .certificado a {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     order: 1;
     background-color: #777676;
     border-radius: 40px;
@@ -511,12 +511,13 @@ nav ul li a:hover {
 
   .certificado p {
     order: 2;
+    margin-top: 5px;
   }
 
   .certificado img {
     position: static; /* já está, mas reforça aqui */
     order: 3;
-    margin-top: 10px;
+    margin-top: 5px;
     width: 50px;
     height: 50px;
   }

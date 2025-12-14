@@ -503,6 +503,7 @@ nav ul li a:hover {
   .certificado a {
     margin-top: 0;
     margin-bottom: 10px;
+    order: 1;
   }
 
   .certificado p {

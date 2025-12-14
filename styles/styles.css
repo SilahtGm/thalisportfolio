@@ -456,7 +456,7 @@ nav ul li a:hover {
   display: inline-block; /* ou block */
   margin-top: 50px;
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
 }
 
@@ -478,10 +478,6 @@ nav ul li a:hover {
   }
 }
 
-.certificado a {
-  color: #fff;
-  font-size: 30px;
-}
 
 .certificado p {
   color: #777676;
@@ -496,4 +492,28 @@ nav ul li a:hover {
 
 .certificado:hover {
   border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .certificado {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certificado a {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .certificado p {
+    order: 2;
+  }
+
+  .certificado img {
+    position: static; /* já está, mas reforça aqui */
+    order: 3;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
 }

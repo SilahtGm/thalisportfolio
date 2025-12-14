@@ -425,7 +425,7 @@ nav ul li a:hover {
 .certificados-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;  
+  gap: 60px;  
   padding: 60px;
 }
 

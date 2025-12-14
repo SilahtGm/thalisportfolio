@@ -7,6 +7,20 @@ overflow-x: hidden;
 margin: 0;
 }
 
+@media (max-width: 768px) {
+
+  body {
+    text-align: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 /* Animação Principal */
 
 .reveal {
@@ -160,24 +174,36 @@ details[open] p {
 }
 
 @media (max-width: 768px) {
+
   .Sobre {
     margin-left: 0;
-    padding: 0 16px;
+    padding: 0 12px;
+    width: 100%;
   }
 
   .Sobre h1 {
-    margin-left: 0;
-    width: 100%;
+    margin: 20px auto;
+    width: fit-content;
+    font-size: 26px;
     text-align: center;
   }
 
   .mini-menu {
-    width: 100%;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 20px;
+    width: 95%;
+    margin: 12px auto;
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .mini-menu summary {
+    font-size: 16px;
+  }
+
+  .mini-menu p {
+    font-size: 14px;
   }
 }
+
 
 
 
@@ -222,25 +248,10 @@ nav ul li a {
 
 @media (max-width: 480px) {
   nav ul {
-    justify-content: flex-start;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 10px;
-    height: auto;
-  }
-
-  nav ul::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  nav ul::-webkit-scrollbar-thumb {
-    background: #2e2e2e;
-    border-radius: 10px;
-  }
-
-  nav ul li a {
-    flex-shrink: 0;
-    margin-right: 0;
+    justify-content: center;
+    overflow-x: hidden;
+    white-space: normal;
+    gap: 15px;
   }
 }
 
@@ -321,6 +332,21 @@ nav ul li a:hover {
   margin: 0;             /* 🔥 remove conflito */
 }
 
+@media (max-width: 768px) {
+
+  .projetos-wrapper {
+    padding: 30px 16px;
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .containers {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    text-align: left;
+  }
+}
 
 
 .containers:hover {
@@ -349,6 +375,22 @@ nav ul li a:hover {
   width: max-content;
   height: 10px;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .containers a {
+    font-size: 20px;
+  }
+
+  .containers p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .containers span {
+    font-size: 12px;
+    padding: 10px;
+  }
 }
 
 /* contato.html */

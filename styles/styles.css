@@ -340,9 +340,11 @@ nav ul li a:hover {
   }
 
   .containers a {
+    display: inline-block;
   background-color: #777676;
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
+  margin-top: 5px;
   font-size: 25px;
   text-decoration: none;
 }

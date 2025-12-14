@@ -471,6 +471,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   .certificados-wrapper {
     justify-items: center; 
+    padding: 60px;
   }
 
   .certificado {

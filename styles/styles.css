@@ -140,6 +140,15 @@ nav ul li h1 {
   margin-top: 0px;
 }
 
+/* Mobile */
+@media (max-width: 480px) {
+  nav ul li h1 {
+    display: none;
+  }
+}
+
+
+
 nav ul li a {
   color: #fff;
   font-size: 20px;

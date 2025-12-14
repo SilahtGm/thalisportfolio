@@ -2,19 +2,22 @@
 function iniciarReveal() {
   const elementos = document.querySelectorAll('.reveal');
 
+  const isMobile = window.innerWidth <= 768;
+
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('ativo');
-        obs.unobserve(entry.target); // anima só uma vez
+        obs.unobserve(entry.target);
       }
     });
   }, {
-    threshold: 0.2
+    threshold: isMobile ? 0.05 : 0.2,
+    rootMargin: isMobile ? '0px 0px -50px 0px' : '0px'
   });
 
   elementos.forEach(el => observer.observe(el));
 }
 
-// garante que o DOM carregou
 document.addEventListener('DOMContentLoaded', iniciarReveal);
+

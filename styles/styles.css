@@ -71,50 +71,112 @@ margin: 0;
   }
 }
 
-/* Sobre mim */
+/* =========================
+   SOBRE MIM
+========================= */
 
 .mini-menu {
   display: flex;
+  flex-direction: column;           /* evita bugs com o p animado */
   width: 60%;
-  display: flex;
   color: #fff;
   background-color: #111;
   border-radius: 30px;
   padding: 30px;
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-bottom: 40px;
+  margin: 10px 0 40px 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid white;
 }
 
+/* ---------- SUMMARY ---------- */
+
 summary {
-  position: absolute;
+  list-style: none;
   cursor: pointer;
+  position: relative;
+  padding-right: 30px;
   font-weight: bold;
-  width: 60%;
 }
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* seta */
+summary::after {
+  content: "▸";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.4s ease;
+  font-size: 20px;
+}
+
+/* quando abre */
+details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* hover */
+.mini-menu:hover summary {
+  text-decoration: underline;
+}
+
+/* ---------- CONTEÚDO ---------- */
+
+.mini-menu p {
+  margin-top: 20px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  color: #777676;
+  transform: translateY(-10px);
+  transition:
+    max-height 0.6s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+/* quando abre */
+details[open] p {
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- TÍTULO ---------- */
 
 .Sobre {
   margin-left: 20%;
 }
 
 .Sobre h1 {
-  display: flex;
   margin-left: 40px;
-  color: #fff;
   margin-top: 5%;
-  border-bottom: 2px solid white;
   width: 200px;
+  color: #fff;
+  border-bottom: 2px solid white;
 }
 
-.mini-menu p {
-  margin-top: 50px;
-  color: #777676;
-}
+@media (max-width: 768px) {
+  .Sobre {
+    margin-left: 0;
+    padding: 0 16px;
+  }
 
-.mini-menu:hover summary {
-  text-decoration: underline;
+  .Sobre h1 {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mini-menu {
+    width: 100%;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 20px;
+  }
 }
 
 

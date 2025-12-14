@@ -21,3 +21,17 @@ function iniciarReveal() {
 
 document.addEventListener('DOMContentLoaded', iniciarReveal);
 
+/* Função de abrir um details por vez  */
+  const details = document.querySelectorAll('.mini-menu');
+
+  details.forEach((target) => {
+    target.addEventListener('toggle', () => {
+      if (target.open) {
+        details.forEach((detail) => {
+          if (detail !== target) {
+            detail.removeAttribute('open');
+          }
+        });
+      }
+    });
+  });

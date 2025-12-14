@@ -74,7 +74,8 @@ margin: 0;
 /* Sobre mim */
 
 .mini-menu {
-  width: 700px;
+  display: flex;
+  width: 60%;
   display: flex;
   color: #fff;
   background-color: #111;
@@ -82,13 +83,16 @@ margin: 0;
   padding: 30px;
   margin-top: 10px;
   margin-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
-
+  border-bottom: 2px solid white;
 }
 
 summary {
   position: absolute;
+  cursor: pointer;
+  font-weight: bold;
+  width: 60%;
 }
 
 .Sobre {
@@ -96,14 +100,17 @@ summary {
 }
 
 .Sobre h1 {
+  display: flex;
   margin-left: 40px;
   color: #fff;
   margin-top: 5%;
+  border-bottom: 2px solid white;
+  width: 200px;
 }
 
 .mini-menu p {
   margin-top: 50px;
-  
+  color: #777676;
 }
 
 .mini-menu:hover summary {
@@ -113,7 +120,11 @@ summary {
 
 
 /* Navegação */
+
 nav ul {
+  background-color: #111;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+  height: 30px;
   display: flex;
   justify-content: end;
   list-style: none;
@@ -240,7 +251,7 @@ nav ul li a:hover {
 .baixar {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   margin-left: 50px;
   width: 50%;
   height: 40px;
@@ -260,9 +271,7 @@ nav ul li a:hover {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
- 
- 
   padding: 20px;
-  
- 
 }
+
+/* Certificados.html */

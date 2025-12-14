@@ -1,3 +1,4 @@
+/* Função de opacidade ao carregar o conteúdo */
 function iniciarReveal() {
   const elementos = document.querySelectorAll('.reveal');
 

@@ -220,15 +220,30 @@ nav ul li a {
 
 }
 
-/* Mobile */
 @media (max-width: 480px) {
+  nav ul {
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    height: auto;
+  }
+
+  nav ul::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  nav ul::-webkit-scrollbar-thumb {
+    background: #2e2e2e;
+    border-radius: 10px;
+  }
+
   nav ul li a {
-    background-color: #2e2e2e;
-    border-radius: 15px;
-    padding: 10px;
-    margin-right: 10px;
+    flex-shrink: 0;
+    margin-right: 0;
   }
 }
+
 
 
 

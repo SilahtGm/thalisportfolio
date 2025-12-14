@@ -309,7 +309,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 80px;
-  padding: 60px;
+  padding: 80px;
 }
 
 .containers {
@@ -430,6 +430,7 @@ nav ul li a:hover {
 }
 
 .certificado {
+  position: relative;
   width: 100%;            /* 🔥 IMPORTANTE */
   height: 320px;
   background-color: #111;
@@ -441,10 +442,26 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
+/* Imagem fixa no canto superior direito */
 .certificado img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;
+}
+
+/* Link */
+.certificado a {
+  display: inline-block; /* ou block */
+  margin-top: 50px;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.certificado a:hover {
+  text-decoration: underline;
 }
 
 
@@ -457,13 +474,13 @@ nav ul li a:hover {
 
   .certificado img {
     position: static;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
-.certificado h1 {
-  margin-left: 70px;
+.certificado a {
   color: #fff;
+  font-size: 30px;
 }
 
 .certificado p {

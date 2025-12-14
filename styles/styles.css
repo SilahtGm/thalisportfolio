@@ -309,7 +309,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 80px;
-  padding: 80px;
+  padding: 60px;
 }
 
 .containers {
@@ -425,7 +425,7 @@ nav ul li a:hover {
 .certificados-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 70px;  
+  gap: 30px;  
   padding: 60px;
 }
 

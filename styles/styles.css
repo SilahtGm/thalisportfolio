@@ -275,3 +275,43 @@ nav ul li a:hover {
 }
 
 /* Certificados.html */
+
+.certificado {
+  display: inline-grid;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 250px;
+  background-color: #111;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5); 
+  border: 2px solid black;
+  margin-left: 50px;
+  padding: 20px;
+}
+
+.certificado img {
+  margin-top: 10px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.certificado h1 {
+  margin-left: 70px;
+  color: #fff;
+}
+
+.certificado p {
+  color: #777676;
+}
+
+.certificado span {
+  color: red;
+  font-weight: bold;
+}
+
+.certificado:hover {
+  border: 2px solid white;
+}

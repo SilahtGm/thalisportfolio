@@ -326,9 +326,10 @@ nav ul li a:hover {
 @media (max-width: 768px) {
 
   .projetos-wrapper {
-    padding: 30px;
-    gap: 20px;
+    padding: 60px;
+    gap: 40px;
     justify-items: center;
+    
   }
 
   .containers {
@@ -512,6 +513,7 @@ nav ul li a:hover {
   .certificado p {
     order: 2;
     margin-top: 5px;
+    margin-bottom: 3px;
   }
 
   .certificado img {

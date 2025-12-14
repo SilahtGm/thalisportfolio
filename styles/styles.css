@@ -504,6 +504,9 @@ nav ul li a:hover {
     margin-top: 0;
     margin-bottom: 10px;
     order: 1;
+    background-color: #777676;
+    border-radius: 40px;
+    padding: 20px;
   }
 
   .certificado p {

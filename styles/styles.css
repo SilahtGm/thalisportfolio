@@ -469,10 +469,13 @@ nav ul li a:hover {
 
 
 @media (max-width: 768px) {
+  .certificados-wrapper {
+    justify-items: center; 
+  }
+
   .certificado {
-    width: 87%;
+    width: 100%;
     height: 340px;
-    justify-items: center;
   }
 
   .certificado img {

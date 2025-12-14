@@ -234,3 +234,35 @@ nav ul li a:hover {
   height: 10px;
   align-items: center;
 }
+
+/* contato.html */
+
+.baixar {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  width: 50%;
+  height: 40px;
+  background-color: #111;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5); 
+  align-items: center;
+}
+
+.baixar:hover {
+  border: 2px solid white;
+}
+
+.baixar a {
+  width: 900px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+ 
+ 
+  padding: 20px;
+  
+ 
+}

@@ -163,6 +163,8 @@ nav ul li a {
   nav ul li a {
     background-color: #2e2e2e;
     border-radius: 15px;
+    padding: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -224,20 +226,24 @@ nav ul li a:hover {
 
 /* projetos.html*/
 
+.projetos-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 80px;
+  padding: 80px;
+}
+
 .containers {
-  display: inline-grid;
-  gap: 10px;
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-bottom: 40px;
-  width: 300px;
+  width: 100%;           /* o grid controla o tamanho */
   height: 400px;
   background-color: #111;
   border-radius: 30px;
   border: 2px solid black;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
   padding: 30px;
+  margin: 0;             /* 🔥 remove conflito */
 }
+
 
 
 .containers:hover {
@@ -298,27 +304,43 @@ nav ul li a:hover {
 
 /* Certificados.html */
 
+.certificados-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 70px;  
+  padding: 60px;
+}
+
 .certificado {
-  display: inline-grid;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  width: 40%;
-  height: 30%;
-  max-width: 40%;
-  max-height: 30%;
+  width: 100%;            /* 🔥 IMPORTANTE */
+  height: 320px;
   background-color: #111;
   border-radius: 20px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
   border: 2px solid black;
-  margin-left: 50px;
+  margin: 0;              /* 🔥 IMPORTANTE */
   padding: 20px;
+  overflow: hidden;
 }
 
 .certificado img {
-  margin-top: 10px;
-  position: absolute;
   width: 50px;
   height: 50px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .certificado {
+    width: 90%;
+    margin: 20px auto;
+    height: 340px;
+  }
+
+  .certificado img {
+    position: static;
+    margin-bottom: 10px;
+  }
 }
 
 .certificado h1 {
@@ -328,7 +350,9 @@ nav ul li a:hover {
 
 .certificado p {
   color: #777676;
+  overflow-y: auto;
 }
+
 
 .certificado span {
   color: red;

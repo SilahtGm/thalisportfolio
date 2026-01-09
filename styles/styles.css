@@ -366,9 +366,9 @@ nav ul li a:hover {
   padding: 8px 15px;       /* Espaçamento interno para o fundo cinza */
   margin-bottom: 15px;     /* Empurra o texto (p) para baixo */
   color: white;
-  font-size: 20px;         /* Ajustei para 20px para não ficar gigante no mobile */
+  font-size: 24px;         /* Ajustei para 20px para não ficar gigante no mobile */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   word-break: break-all;
 
 }
@@ -386,6 +386,12 @@ nav ul li a:hover {
   font-size: 14px;
   margin-right: 5px;
   margin-top: 10px;
+}
+
+.containers span:hover {
+  background-color: #2b2b2b;
+  color: #a1a1a1;
+  
 }
 
 @media (max-width: 768px) {

@@ -235,16 +235,9 @@ details[open] p {
 
 @media (max-width: 1250px) {
 
-  .formacoes {
+.formacoes {
   display: flex;
   flex-direction: column;
-  }
-
-  .card-formacao {
-   display: flex;
-   width: 100px;
-   height: 20px ;
-   margin-right: 10px;
   }
 
 }
@@ -255,6 +248,7 @@ details[open] p {
   flex-direction: row;
   width: 350px;
   height: 10px;
+  margin-right: 20px;
   margin-top: 10px;
   white-space: nowrap;
   padding: 15px 20px;

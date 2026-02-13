@@ -469,7 +469,7 @@ nav ul li a:hover {
 
 .projetos-wrapper {
   display: grid;
-  margin-right: 40px;
+  margin-right: 70px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 80px;
   padding: 80px;
@@ -608,7 +608,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 60px;  
-  margin-right: 40px;
+  margin-right: 70px;
   padding: 60px;
 }
 

@@ -1,7 +1,7 @@
 /* Index.html*/
 
 body {
-background-color: #001724;
+background: linear-gradient(to right, #470250, #01162e);
 font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 overflow-x: hidden;
 margin: 0;
@@ -20,12 +20,72 @@ margin: 0;
   opacity: 1;
   transform: translateY(0);
 }
+/* Botões de apresentação */
 
+.container-botoes {
+  display: flex;          /* Ativa o modo flexível */
+  flex-direction: row;    /* Coloca os itens em linha (padrão) */
+  gap: 20px;              /* Cria um espaço fixo entre os botões */
+  justify-content: flex-start; /* Alinha à esquerda (use 'center' para centralizar) */
+  margin-left: 40px;      /* Mantém o recuo que você já estava usando */
+  margin-bottom: 150px;
+}
+
+.botaoprojetos {
+  display: flex; /* Permite centralizar o texto internamente */
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px; /* Defini uma altura fixa maior para caber o texto */
+  border-radius: 20px;
+  border: 1px solid #ffffff; 
+  background-color: rgba(0, 0, 0, 0); /* Azul sólido (se quiser transparente, use rgba) */
+  color: white;
+  text-decoration: none; 
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s; /* Faz as cores mudarem suavemente no hover */
+}
+
+.botaoprojetos1 {
+   background: linear-gradient(to right, #b700ff, #0cbfec);
+   display: flex; /* Permite centralizar o texto internamente */
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px; /* Defini uma altura fixa maior para caber o texto */
+  border-radius: 20px;
+  box-shadow: 0 5px 50px rgba(255, 255, 255, 0.226);
+  background-color: rgba(0, 0, 0, 0); /* Azul sólido (se quiser transparente, use rgba) */
+  color: white;
+  text-decoration: none; 
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s; /* Faz as cores mudarem suavemente no hover */
+}
+
+
+
+/* Efeito ao passar o mouse */
+.botaoprojetos:hover {
+  background-color: white;
+  color: #056dc2;
+  border-color: #056dc2;
+  transform: scale(1.05);
+}
+
+/* Efeito ao passar o mouse */
+.botaoprojetos1:hover {
+  background-color: white;
+  border-color: #056dc2;
+  transform: scale(1.05);
+}
 
 /* Faixa */
 .faixa {
   width: 100vw;
   margin-top: 10%;
+  margin-bottom: 10%;
   overflow: hidden;
   white-space: nowrap;
   background: #111;
@@ -146,7 +206,86 @@ details[open] p {
   transform: translateY(0);
 }
 
+
+/* ---------- FORMAÇÕES ---------- */
+
+
+.formacoes {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.apresentar-formacao {
+  margin-bottom: 20px;
+}
+
+.apresentar-formacao span {
+  font-family: sans-serif;
+  font-size: 28px;
+  border-radius: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #0cbfec;
+  margin-left: 40px;
+  color: #ffffff;
+}
+
+@media (max-width: 1250px) {
+
+  .formacoes {
+  display: flex;
+  flex-direction: column;
+  }
+
+}
+
+.card-formacao {
+  /* Estilo do Card */
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  height: 10px;
+  margin-top: 10px;
+  white-space: nowrap;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background-color: #1e293b; /* Um fundo escuro elegante */
+  color: #f8fafc;
+  font-family: sans-serif;
+  
+  /* Borda com degradê lateral (sutil e moderno) */
+  border-left: 5px solid;
+  border-image: linear-gradient(to bottom, #056dc2, #00d4ff) 1;
+  
+  /* Sombra para dar profundidade */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.formacoes a {
+  text-decoration: none;
+}
+
+/* Efeito ao passar o mouse */
+.card-formacao:hover {
+  transform: translateX(10px); /* Move levemente para a direita */
+  background-color: #334155;
+}
+
+
+
 /* ---------- TÍTULO ---------- */
+
+.apresentacao p span {
+  text-decoration: underline;
+  font-weight: 1100;
+  background: linear-gradient(to left, #cc49ff, #00ccff);
+  -webkit-background-clip: text; /* "Corta" o fundo no formato das letras */
+  color: transparent;            /* Deixa o texto invisível para o fundo brilhar */
+}
 
 .Sobre {
   margin-left: 20%;
@@ -263,7 +402,7 @@ nav ul li a:hover {
   color: #fff;
  padding: 50px;
  margin-top: 0px;
- font-size: 20px;
+ font-size: 24px;
 }
 
 .apresentacao h1 {
@@ -307,6 +446,7 @@ nav ul li a:hover {
 
 .projetos-wrapper {
   display: grid;
+  margin-right: 40px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 80px;
   padding: 80px;
@@ -444,6 +584,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 60px;  
+  margin-right: 40px;
   padding: 60px;
 }
 

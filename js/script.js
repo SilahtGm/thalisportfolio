@@ -35,3 +35,24 @@ document.addEventListener('DOMContentLoaded', iniciarReveal);
       }
     });
   });
+
+
+  /* Hamburguer */
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const icon = hamburger.querySelector('i');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+  
+  // Troca o ícone de Bars para X (Times)
+  if (navMenu.classList.contains('show')) {
+    icon.classList.remove('fa-bars');
+    icon.classList.add('fa-xmark');
+    hamburger.style.transform = "rotate(90deg)";
+  } else {
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-bars');
+    hamburger.style.transform = "rotate(0deg)";
+  }
+});

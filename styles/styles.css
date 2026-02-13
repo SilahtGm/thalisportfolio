@@ -711,3 +711,70 @@ nav ul li a:hover {
     height: 50px;
   }
 }
+
+
+/* HAMBURGUER */
+
+/* --- COMPORTAMENTO PARA PC --- */
+.menu-mobile {
+  display: none; /* Esconde o ícone no computador */
+}
+
+/* --- COMPORTAMENTO PARA MOBILE --- */
+/* --- COMPORTAMENTO PARA PC (Não muda nada) --- */
+.nav-menu-mobile {
+  display: contents; /* No PC, os itens continuam sendo filhos diretos do UL */
+}
+
+/* --- COMPORTAMENTO PARA MOBILE --- */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: flex-end; /* Garante o hambúrguer na direita */
+    height: 70px;
+    align-items: center;
+  }
+
+  .menu-mobile {
+    display: block;
+    z-index: 1001; /* Fica acima do menu lateral */
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+    transition: 0.4s;
+  }
+
+  /* O Painel que desliza da direita */
+  .nav-menu-mobile {
+    display: flex !important; /* Força o flex no mobile */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed; /* Fixa na tela toda */
+    top: 0;
+    right: 0;
+    width: 100%;    /* Ocupa a largura toda */
+    height: 100vh;  /* Ocupa a altura toda */
+    background-color: rgba(1, 22, 46, 0.98); /* Cor do seu gradiente de fundo */
+    
+    /* Estado inicial: escondido fora da tela à direita */
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    z-index: 1000;
+  }
+
+  /* Quando o menu abre */
+  .nav-menu-mobile.show {
+    transform: translateX(0);
+  }
+
+  .nav-item {
+    margin: 20px 0;
+    list-style: none;
+  }
+
+  .nav-item a {
+    font-size: 26px; /* Links maiores no mobile */
+    margin-right: 0 !important; /* Remove o margin do PC */
+  }
+}

@@ -240,6 +240,10 @@ details[open] p {
   flex-direction: column;
   }
 
+  .card-formacao {
+   min-width: 180px;
+  }
+
 }
 
 .card-formacao {
@@ -466,6 +470,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
 
   .projetos-wrapper {
+    margin-right: 0px;
     padding: 60px;
     gap: 40px;
     justify-items: center;

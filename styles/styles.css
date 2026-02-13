@@ -280,11 +280,11 @@ details[open] p {
 /* ---------- TÍTULO ---------- */
 
 .apresentacao p span {
+  font-weight: 900;
   text-decoration: underline;
-  font-weight: 1100;
   background: linear-gradient(to left, #cc49ff, #00ccff);
-  -webkit-background-clip: text; /* "Corta" o fundo no formato das letras */
-  color: transparent;            /* Deixa o texto invisível para o fundo brilhar */
+  background-clip: text;
+  color: transparent;
 }
 
 .Sobre {

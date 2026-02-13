@@ -737,8 +737,9 @@ nav ul li a:hover {
   .menu-mobile {
     display: block;
     z-index: 1001; /* Fica acima do menu lateral */
+    margin-right: 30px;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 38px;
     color: white;
     transition: 0.4s;
   }

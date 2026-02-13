@@ -81,6 +81,16 @@ margin: 0;
   transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+
+  .container-botoes {
+    gap: 10px;
+    margin-right: 20px;
+    margin-left: 20px; 
+  }
+
+}
+
 /* Faixa */
 .faixa {
   width: 100vw;

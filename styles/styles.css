@@ -233,14 +233,7 @@ details[open] p {
   color: #ffffff;
 }
 
-@media (max-width: 1250px) {
 
-.formacoes {
-  display: flex;
-  flex-direction: column;
-  }
-
-}
 
 .card-formacao {
   /* Estilo do Card */
@@ -276,7 +269,22 @@ details[open] p {
   background-color: #334155;
 }
 
+@media (max-width: 1250px) {
 
+.formacoes {
+  display: flex;
+  flex-direction: column;
+  }
+
+.card-formacao {
+  align-items: center;
+  white-space: wrap;
+  padding: 20px;
+  width: 200px;
+  height: 20px;
+}
+
+}
 
 /* ---------- TÍTULO ---------- */
 

@@ -56,3 +56,14 @@ hamburger.addEventListener('click', () => {
     hamburger.style.transform = "rotate(0deg)";
   }
 });
+
+
+/* Tela de loading */
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader-wrapper');
+  
+  // Pequeno delay para a animação de progresso completar visualmente
+  setTimeout(() => {
+    loader.classList.add('loader-hidden');
+  }, 2000); 
+});

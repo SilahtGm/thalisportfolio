@@ -652,6 +652,13 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+
+  .disponivel:hover {
+    transform: none;
+  }
+}
+
 
 /* Certificados.html */
 

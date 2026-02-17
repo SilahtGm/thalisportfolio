@@ -8,6 +8,7 @@ margin: 0;
 }
 
 
+
 /* Animação Principal */
 
 .reveal {
@@ -201,6 +202,7 @@ details[open] summary::after {
 /* ---------- CONTEÚDO ---------- */
 
 .mini-menu p {
+  padding: 20px;
   margin-top: 20px;
   max-height: 0;
   overflow: hidden;
@@ -484,7 +486,9 @@ nav ul li a:hover {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
   padding: 30px;
   margin: 0;             /* 🔥 remove conflito */
+  transform: 0.1;
 }
+
 
 @media (max-width: 768px) {
 
@@ -517,6 +521,7 @@ nav ul li a:hover {
 
 .containers:hover {
   border: 2px solid #fff;
+  transform: scale(1.05);
 }
 
 .containers p {
@@ -602,6 +607,52 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+/* Mensagem de disponivel para estagio */
+
+.disponivel {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* height: 10px;  <-- REMOVI ISSO. Estava muito pequeno e esmagava o conteúdo. */
+  width: 200px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #222;
+  padding: 5px; 
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px   rgba(255, 255, 255, 0.6); 
+  /* Opcional: adicionei uma transição suave se você quiser animar no futuro */
+  transition: 2s;
+}
+
+/* --- A MÁGICA DA BOLINHA VERDE --- */
+.disponivel::before {
+  content: ""; /* Obrigatório para o pseudo-elemento aparecer */
+  display: inline-block;
+  width: 10px;  /* Tamanho da bolinha */
+  height: 10px;
+  background-color: #2ecc71; /* Um verde vibrante (verde esmeralda) */
+  border-radius: 50%; /* Transforma o quadrado em círculo */
+  margin-right: 10px; /* Espaço entre a bolinha e o texto */
+  
+  /* O efeito "levemente embaçado" / brilhante */
+  box-shadow: 0 0 6px rgba(46, 204, 113, 0.6); 
+}
+
+.disponivel a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none; /* Garante que não tenha sublinhado no link */
+}
+
+.disponivel:hover {
+  width: 90%;
+  transform: scale(1.05);
+}
+
+
 /* Certificados.html */
 
 .certificados-wrapper {
@@ -623,6 +674,7 @@ nav ul li a:hover {
   margin: 0;              /* 🔥 IMPORTANTE */
   padding: 20px;
   overflow: hidden;
+  transform: 0.1;
 }
 
 /* Imagem fixa no canto superior direito */
@@ -680,6 +732,7 @@ nav ul li a:hover {
 
 .certificado:hover {
   border: 2px solid white;
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -778,4 +831,103 @@ nav ul li a:hover {
     font-size: 26px; /* Links maiores no mobile */
     margin-right: 0 !important; /* Remove o margin do PC */
   }
+}
+
+
+/* RODAPÉ */
+
+/* --- RODAPÉ --- */
+.rodape-simples {
+  margin-top: 200px;
+  background-color: #0b0b0b; /* Um pouco mais escuro que o fundo para dar profundidade */
+  color: #ffffff;
+  padding: 50px 0 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.rodape-conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.rodape-info h3 {
+  font-size: 28px;
+  margin: 0;
+  background: linear-gradient(to right, #cc49ff, #00ccff); /* O degradê que você já usa */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.rodape-info p {
+  color: #a1a1a1;
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.rodape-sociais {
+  display: flex;
+  gap: 25px;
+}
+
+.rodape-sociais a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.rodape-sociais a:hover {
+  color: #0cbfec; /* Cor de destaque dos seus links atuais */
+  transform: translateY(-5px);
+}
+
+.rodape-copyright {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.rodape-copyright p {
+  color: #555;
+  font-size: 12px;
+}
+
+/* Ajuste Mobile */
+@media (max-width: 768px) {
+  .rodape-conteudo {
+    gap: 20px;
+  }
+  
+  .rodape-info h3 {
+    font-size: 24px;
+  }
+}
+
+
+/* Acessar */
+.acessar {
+  position: absolute;
+  right: 20px;   /* Distância da borda esquerda (usei 20px para não ficar colado) */
+  bottom: 20px; /* Distância da borda inferior */
+  background-color: #494646;
+  padding: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  border: 1px solid rgb(0, 0, 0);
+  transform: 2s;
+}
+
+.acessar:hover {
+  border-color: white;
 }

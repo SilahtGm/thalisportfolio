@@ -65,5 +65,5 @@ window.addEventListener('load', () => {
   // Pequeno delay para a animação de progresso completar visualmente
   setTimeout(() => {
     loader.classList.add('loader-hidden');
-  }, 2000); 
+  }, 1200); 
 });
